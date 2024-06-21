@@ -1,0 +1,13 @@
+
+<h2 mat-dialog-title>User Details</h2>
+  <mat-dialog-content>
+      <form [formGroup]="myForm" (ngSubmit)="changeUserData()">
+          <input type="text" class="form-control" placeholder="Name" formControlName="name">
+          <input type="text" class="form-control" placeholder="Last Name" formControlName="last_name">
+          <input type="text" class="form-control" placeholder="Email" formControlName="email">
+      </form>
+  </mat-dialog-content>
+<mat-dialog-actions>
+  <button type="submit" mat-button mat-dialog-close>Save</button>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
